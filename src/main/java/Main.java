@@ -13,6 +13,6 @@ public class Main {
         comment.setAuthor("Carlos");
         comment.setText("Demo Test");
 
-        service.publishComment(comment);
+        String value = service.publishComment(comment);
     }
 }
