@@ -1,3 +1,5 @@
+package main;
+
 import config.ProjectConfig;
 import model.Comment;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

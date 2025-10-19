@@ -1,5 +1,6 @@
 package services;
 
+import aspects.ToLog;
 import model.Comment;
 import org.springframework.stereotype.Service;
 
@@ -9,8 +10,10 @@ import java.util.logging.Logger;
 public class CommentService {
     private Logger logger = Logger.getLogger(CommentService.class.getName());
 
+    @ToLog
     public String publishComment(Comment comment) {
         logger.info("Publishing Comment: " + comment.getText());
-        return "SUCCESS";
+        return "Success";
     }
+
 }
